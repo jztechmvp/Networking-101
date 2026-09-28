@@ -1,0 +1,269 @@
+##1: Network Media and Connectivity
+  A. End Devices
+    Devices that send or receive network data.
+      Smart Phone, PC / Mac, Laptop, IP Phone, Printer, Server/s
+  B. Intermediary Devices
+    Devices that connect, forward, control, or secure network traffic.
+      Switch – connects devices within a LAN
+      Router – connects different networks
+      Multilayer Switch – performs switching and routing
+      Access Point – provides wireless network access
+      Firewall – filters and controls network traffic
+      Hub – connects devices and repeats traffic to all ports
+      Bridge – connects network segments
+      Repeater – regenerates signals
+      Modem – converts signals for ISP connections
+      VPN Concentrator – handles many VPN connections
+    Older/specialized devices:
+      - CSU/DSU, ATM Switch, Access Server, Cisco PIX, Cisco ASA, IP Telephony Router, Cable DSU 
+  C. Network Media
+    The physical or wireless path through which data signals travel.
+      - Copper, Fiber optic, Wireless/RF
+##2. What Is Network Media?
+  Network media is the physical or wireless medium used to carry signals from one network device to another.
+  When data is transmitted:
+    - Data → Bits → Signals → Network Media → Destination
+  Three Main Media Types
+  | Media           | Signal             | Common Use               |
+  | --------------- | ------------------ | ------------------------ |
+  | **Copper**      | Electrical signals | LANs                     |
+  | **Fiber Optic** | Light pulses       | Backbone / long distance |
+  | **Wireless**    | Radio waves        | Wi-Fi / mobile / IoT     |
+  
+Copper Cabling
+  Copper cables transmit data using electrical signals.
+  Main Types
+    1.Twisted Pair
+      Most common LAN cable
+      Uses twisted wires to reduce interference
+      Examples: Cat 5e, Cat 6, Cat 6A
+    2.Coaxial
+      Central copper conductor with shielding
+      Commonly used for cable TV and cable Internet
+      Examples: RG-6, RG-59
+    Advantages
+      Relatively inexpensive
+      Easy to install
+      Common networking technology
+    Limitations
+      Limited transmission distance
+      Susceptible to interference
+      Signal attenuation occurs over distance
+Ethernet Copper Cable Categories
+  | Cable      | Typical Ethernet Speed | Maximum Distance* | Frequency |
+  | ---------- | ---------------------: | ----------------: | --------: |
+  | **Cat 3**  |                10 Mbps |             100 m |    16 MHz |
+  | **Cat 5**  |               100 Mbps |             100 m |   100 MHz |
+  | **Cat 5e** |                 1 Gbps |             100 m |   100 MHz |
+  | **Cat 6**  |       1 Gbps / 10 Gbps |      100 m / 55 m |   250 MHz |
+  | **Cat 6A** |                10 Gbps |             100 m |   500 MHz |
+  | **Cat 8**  |             25–40 Gbps |             ~30 m | 2,000 MHz |
+  *Distance depends on the Ethernet standard and installation conditions.
+  Key idea: Higher cable categories generally support higher frequencies and higher data rates.
+  For modern LANs, focus mainly on:
+    Cat 5e → Cat 6 → Cat 6A → Cat 8
+Ethernet Naming
+  Examples:
+  1000BASE-T
+    1000 = 1,000 Mbps
+    BASE = baseband signaling
+    T = twisted pair
+  10GBASE-SR
+    10G = 10 Gbps
+    BASE = baseband
+    SR = short-range fiber
+  Common Example:
+    | Standard        | Medium            |    Speed |
+    | --------------- | ----------------- | -------: |
+    | **10BASE-T**    | Twisted pair      |  10 Mbps |
+    | **100BASE-TX**  | Twisted pair      | 100 Mbps |
+    | **1000BASE-T**  | Twisted pair      |   1 Gbps |
+    | **10GBASE-T**   | Twisted pair      |  10 Gbps |
+    | **1000BASE-SX** | Multimode fiber   |   1 Gbps |
+    | **1000BASE-LX** | Fiber             |   1 Gbps |
+    | **10GBASE-SR**  | Multimode fiber   |  10 Gbps |
+    | **10GBASE-LR**  | Single-mode fiber |  10 Gbps |
+@Ethernet Connectors
+  RJ-45 -Used for Ethernet twisted-pair connections. Technically, the common Ethernet plug is an 8P8C modular connector, although it is commonly called RJ-45.
+  RJ-11 - Used primarily for telephone connections.
+  F-Type - Used with coaxial cable, commonly for:
+    Cable TV
+    Cable Internet
+    Satellite
+  BNC - Coaxial connector commonly found in:
+    Video
+    CCTV
+    RF applications
+    Older networking equipment
+@Ethernet Wiring Standards
+    1. Straight-Through
+        Same standard on both ends - T568B → T568B 
+        Traditionally used between different device types.
+        Example: PC → Switch
+    2.Crossover
+        Different standards on each end - T568A → T568B
+        Traditionally used between similar device types.
+        Example: Switch → Switch
+    Two common wiring schemes:
+      T568A
+      T568B
+    However, modern network interfaces commonly support Auto-MDI/MDIX, which automatically detects the connection and makes crossover cables largely unnecessary.
+    3. Rollover Cable - A cable with a completely reversed pinout, historically used for Cisco console connections.
+  @Cable Construction and Tools
+    Common Cable Components
+      Conductor
+      Insulation
+      Shielding
+      Outer jacket
+    Cable-Making Tools
+      Wire stripper
+      RJ-45 crimper
+      Cable tester
+    Proper Termination
+      Correct termination ensures that:
+        Wires are in the correct order
+        Connections are secure
+        Signals can travel correctly
+
+##3 - Fiber-Optic Cabling
+  Fiber optic transmits data using pulses of light through glass or plastic fiber.
+    Advantages
+    Very high bandwidth
+    Long transmission distances
+    Resistant to EMI/RFI
+    Low signal loss
+    Useful for backbone connections
+  Disadvantages
+    More expensive
+    More difficult to terminate
+    Requires specialized equipment and skills
+  Types of Fiber
+    1. Single-Mode Fiber(SMF) - Small core → one primary light path → long distance
+      Very small core
+      Usually uses laser-based light sources
+      Low dispersion
+      Long-distance communication
+      Common in ISP/backbone networks
+      Common jacket color: yellow
+    Typical uses:
+      ISP backbone
+      Long-distance networks
+      Building-to-building connections
+      Submarine cables
+  2.Multimode Fiber(MMF) - Larger core → multiple light paths → shorter distance
+      Larger core
+      Multiple light paths
+      More dispersion
+      Generally less expensive
+      Common in LANs and data centers
+      Common jacket colors: orange or aqua
+    Typical uses:
+      Data centers
+      Enterprise LANs
+      Campus networks
+      Building backbones
+    Easy way to remember
+      SMF = Single = Long distance
+      MMF = Multiple = Medium/short distance
+  Fiber Connectors
+    | Connector | Key Characteristic                         |
+    | --------- | ------------------------------------------ |
+    | **SC**    | Push-pull, larger connector                |
+    | **LC**    | Smaller, high-density environments         |
+    | **ST**    | Twist-lock/bayonet style                   |
+    | **FC**    | Screw-on connector                         |
+    | **MPO**   | Multiple fibers in one connector           |
+    | **MTRJ**  | Compact connector carrying multiple fibers |
+    Most important to remember
+      SC → Push/Pull
+      LC → Small / High Density
+      ST → Twist
+      MPO → Multiple Fibers
+  Fiber Patch Cords - connects network equipment to another fiber connection, such as a patch panel.
+    Examples:
+      SC–SC
+      LC–LC
+      ST–LC
+      SC–ST
+      The connector and fiber type must match the equipment and application.
+  Back Reflection
+    Back reflection occurs when some transmitted light reflects back toward the transmitter.
+    Too much reflection can degrade the optical signal.
+    Proper connector polishing and termination help minimize it.
+
+##4 - Coaxial, DAC, and Twinax
+Coaxial - Single central conductor surrounded by insulation and shielding.
+Common use: Cable Internet and TV.
+DAC — Direct Attach Copper
+  Pre-terminated copper cable used for short, high-speed connections, especially in data centers.
+Example:
+Switch ↔ Server
+
+Twinax
+
+Uses paired copper conductors within shielding and is commonly used for short high-speed data-center connections.
+
+16. Cable Selection
+
+When choosing network media, consider four major factors:
+
+Distance – How far must the signal travel?
+Environment – Where will the cable be installed?
+Speed/Bandwidth – How much data must it carry?
+Cost – What is the cable and installation cost?
+17. Cable Fire Ratings
+Plenum — CMP
+
+Designed for installation in air-handling spaces, such as some spaces above ceilings or below raised floors.
+
+Higher fire/smoke requirements
+More expensive
+PVC / Non-Plenum
+
+Standard cable jacket used where plenum-rated cable is not required.
+
+Important: The correct cable rating depends on local building and fire codes.
+
+18. Ethernet vs Fiber — Simple Comparison
+	Copper Ethernet	Fiber
+Signal	Electrical	Light
+Cost	Lower	Higher
+Installation	Easier	More specialized
+Distance	Generally shorter	Much longer
+EMI	Susceptible	Immune
+Common use	User/edge connections	Backbone/data center/long distance
+19. Enterprise Network Example
+
+A typical enterprise network may use:
+
+Internet / ISP
+      │
+    Fiber
+      │
+   Router
+      │
+    Fiber
+      │
+Core Switch
+      │
+ ┌────┴─────┐
+ │          │
+Fiber      Copper
+ │          │
+Access     PCs
+Switch     Printers
+ │
+Wi-Fi AP
+ │
+Laptops / Phones
+
+Common Media Interference
+  1.EMI/RFI - Electromagnetic Interference (EMI) and Radio Frequency Interference (RFI) can interfere with electrical signals.
+    Examples:
+      Electric motors
+      Fluorescent lighting
+      Radio signals
+  2.Crosstalk - Crosstalk occurs when the signal from one wire interferes with a nearby wire.
+  3.Attenuation - Attenuation is the weakening of a signal as it travels over distance.
+  Simple relationship:
+    Longer distance → More signal loss
