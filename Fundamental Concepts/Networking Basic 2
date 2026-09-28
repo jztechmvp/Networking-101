@@ -1,0 +1,190 @@
+## Topic 2: Information Theory
+  What is Information Theory?
+    - Information theory is the mathematical study of how information is measured, encoded, transmitted, stored, and protected from errors.
+  Founder
+    - Claude Shannon founded modern information theory in 1948 through A Mathematical Theory of Communication.
+  Key Concepts
+    Entropy – measures uncertainty or information.
+    Encoding – converts information into a format suitable for storage or transmission.
+    Compression – reduces the amount of data needed to represent information.
+    Transmission – sends information through a communication channel.
+    Channel Capacity – the maximum rate at which data can be reliably transmitted.
+    Error Detection & Correction – detects and/or corrects errors caused by noise or interference.
+  Real-World Applications
+    Information theory is used in data compression, digital communication, networking, wireless communication, storage, and error correction.
+
+##Topic 3: Networking Models
+  What is a Networking Model?
+   - A networking model is a framework that helps explain how data is transmitted between devices across a network.
+  Main Networking Models
+    1. OSI Model
+      - 7-layer reference model
+      - Mainly used to understand and troubleshoot network communication.
+      - Describes the functions involved in network communication.
+    2. TCP/IP Model
+      - 4-layer protocol model
+      - Used by the Internet and modern networks.
+      - Describes how actual networking protocols work together.
+    Simple Difference
+      OSI = How we understand networking
+      TCP/IP = How networking protocols actually work together
+
+##Topic 4: Communication Standards
+  What are Network Standards?
+    - Network standards are agreed-upon rules and specifications that allow devices and technologies from different manufacturers to communicate.
+  Network Standards
+    Examples:
+      Ethernet – IEEE 802.3
+      Wi-Fi – IEEE 802.11
+      Bluetooth – IEEE 802.15
+    Internet Standards
+      Examples:
+        TCP/IP
+        HTTP/HTTPS
+        DNS
+    Internet standards are primarily developed through the IETF and documented in RFCs (Request for Comments).
+
+##Topic 5: Ethernet
+  What is Ethernet?
+    Ethernet is a networking technology used primarily for wired LANs and is defined by the IEEE 802.3 standard.
+  Ethernet includes both:
+    Physical components – cables, connectors, signaling
+    Data communication rules – Ethernet frames and how devices communicate
+  Ethernet Evolution
+    Early Ethernet
+      Used coaxial cable
+      Used a shared bus
+      Devices shared the same communication medium
+      Collisions were possible
+    Modern Ethernet
+      Uses twisted-pair copper or fiber
+      Uses switches
+      Typically operates in full-duplex
+      Supports much higher speeds
+      Modern switched Ethernet does not normally use CSMA/CD
+    Ethernet Standards
+| Standard              | Technology             |
+| --------------------- | ---------------------- |
+| **10BASE2 / 10BASE5** | Early coaxial Ethernet |
+| **10BASE-T**          | Twisted-pair Ethernet  |
+| **100BASE-TX**        | Fast Ethernet          |
+| **1000BASE-T**        | Gigabit Ethernet       |
+##CLOUD
+1. Cloud Computing
+  - Cloud computing is the delivery of computing resources—such as servers, storage, databases, networking, and applications—over a network, usually the Internet.
+  Key benefits:
+    Scalability
+    Flexibility
+    Pay-as-you-use
+    High availability
+    Reduced infrastructure management
+2. Cloud Service Models
+  | Model    | What you manage           | Example           |
+| -------- | ------------------------- | ----------------- |
+| **IaaS** | VMs, OS, applications     | Amazon EC2        |
+| **PaaS** | Applications and data     | Azure App Service |
+| **SaaS** | Mainly your data/settings | Microsoft 365     |
+Simple idea: IaaS = rent infrastructure → PaaS = rent a development platform → SaaS = use ready-made software
+3. Cloud Deployment Models
+  Public Cloud – Infrastructure shared among customers and operated by a cloud provider.
+  Private Cloud – Cloud infrastructure dedicated to one organization.
+  Community Cloud – Shared by organizations with common requirements.
+  Hybrid Cloud – Combination of private/on-premises and public cloud environments.
+4. Traditional IT vs Cloud
+  Traditional IT: Organization owns and manages its physical servers, networking equipment, storage, and data center.
+  Cloud: Organization uses computing resources provided through a cloud provider.
+  Hybrid IT: Combines on-premises infrastructure with cloud services.
+
+5. Cloud Connectivity
+  Organizations can connect their networks to cloud services through several methods:
+  | Method                 | Description                                                                                                                                   |
+  | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **Internet**           | Connect to cloud services through the public Internet.                                                                                        |
+  | **VPN**                | Creates an encrypted connection between the organization and cloud network over the Internet.                                                 |
+  | **Private Connection** | Dedicated/private connectivity between the organization and cloud provider; typically more predictable and secure than Internet-based access. |
+  Simple flow: Company Network → Internet/VPN/Private Connection → Cloud
+
+6. Cloud Security
+  Cloud security protects cloud infrastructure, applications, data, identities, and network connections.
+  Common areas include:
+    Identity and access management
+    Encryption
+    Network security
+    Firewalls
+    Monitoring and logging
+    Backup and recovery
+7. Modern Networking/Cloud Technologies Architecture;
+  | Technology | What it is                             | Simple explanation                                                                                      |
+  | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+  | **NFVI**   | **NFV Infrastructure**                 | The **hardware + virtual resources** used to run virtual network functions.                             |
+  | **SDN**    | **Software-Defined Networking**        | Controls and manages a network **through software**, rather than configuring every device individually. |
+  | **SD-WAN** | **Software-Defined Wide Area Network** | Uses software to **manage and optimize connections between different locations**.                       |
+  | **VXLAN**  | **Virtual Extensible LAN**             | Creates **large-scale virtual networks** over an existing IP network.                                   |
+  | **SASE**   | **Secure Access Service Edge**         | Combines **networking + security** as cloud-delivered services.                                         |
+  | **SSE**    | **Security Service Edge**              | Provides **cloud-delivered security services**, without the networking portion of SASE.                 |
+8. Virtualization
+  Virtualization is a technology that allows one physical computer to run multiple virtual machines (VMs).
+  Hypervisors
+    | Type       | Description                                 |
+    | ---------- | ------------------------------------------- |
+    | **Type 1** | Runs directly on physical hardware          |
+    | **Type 2** | Runs on top of an existing operating system |
+  Examples:
+    VMware
+    Microsoft Hyper-V
+    Oracle VirtualBox
+9. Containerization
+  Containerization packages an application and its dependencies into a lightweight, isolated environment called a container.
+    Common technologies:
+      Docker – container platform/engine
+      Kubernetes – container orchestration platform
+      Docker Swarm – container orchestration technology
+    VM vs Container
+      VM: Virtualizes an entire operating system.
+      Container: Shares the host OS kernel while isolating the application and its dependencies.
+10. Cloud vs Virtualization
+  These two concepts are related but not the same.
+    Virtualization = technology used to create virtual computing resources.
+    Cloud computing = service model for delivering computing resources over a network.
+  Virtualization can be used to build cloud infrastructure, but cloud computing is broader than virtualization.
+  Cloud environments can contain:
+    Physical servers
+    Virtual machines
+    Containers
+    Storage
+    Virtual networks
+11. VDI — Virtual Desktop Infrastructure
+    VDI hosts users' desktop environments on centralized servers and allows users to access them remotely from different devices.
+    Simple idea:
+      User Device → Network → Virtual Desktop → Data Center/Cloud
+    Microsoft 365 is not itself VDI, although Microsoft provides cloud desktop/VDI-related services such as Azure Virtual Desktop.
+12. Cloud Migration
+  Cloud migration is the process of moving applications, data, workloads, or infrastructure from existing environments to the cloud.
+  Common approaches include:
+    Rehost – move with minimal changes
+    Replatform – make limited optimizations
+    Refactor – redesign the application for cloud
+    Retain – keep it where it is
+    Retire – remove unnecessary systems
+13. IoT — Internet of Things
+  IoT connects physical devices containing sensors, software, and network connectivity so they can collect, exchange, and process data.
+  Examples:
+    Smart appliances
+    Security cameras
+    Sensors
+    Vehicles
+    Industrial equipment
+    Smart watches
+  Networking enables IoT devices to communicate with other devices and systems.
+14. IT Operations and Governance
+  These are the processes used to manage and control IT environments.
+  | Area                         | Purpose                                          |
+  | ---------------------------- | ------------------------------------------------ |
+  | **Documentation**            | Record systems, configurations, and procedures   |
+  | **Asset Management**         | Track hardware, software, and other IT assets    |
+  | **IPAM**                     | Manage IP addresses and network assignments      |
+  | **Agreements**               | Define responsibilities and service expectations |
+  | **Product Lifecycle**        | Manage systems from deployment to retirement     |
+  | **Change Management**        | Control and document changes                     |
+  | **Configuration Management** | Maintain consistent system configurations        |
+  | **Patch Management**         | Deploy updates and security patches              |
