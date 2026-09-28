@@ -1,0 +1,36 @@
+## What is Networking Computer Networking?
+-  Networking is the process of connecting two or more computing devices, such as computers, routers, switches, printers, and servers, to communicate and share data, resources, services, and applications.
+## How Computer Network and Internet works?
+		A computer network is a group of connected devices that communicate and share data and resources with each other. Devices such as computers, servers, switches, routers, and printers use communication protocols to send data across the network to the correct destination.
+		The Internet works by connecting millions of networks and devices around the world, allowing them to communicate and exchange data using standard protocols such as TCP/IP. When you access a website or send data, your device breaks the information into packets, which travel through networks and routers to reach the destination device or server.
+## How Data Flow in a Network?
+		Data moves from an application on your device through different networking layers before being transmitted through the physical network. The OSI Model and TCP/IP Model help explain how this communication happens, meaning it provide a structured way to understand how data moves from an application through the network layers and ultimately across the transmission medium.
+## Transmission Method:
+		Wired technologies - Ethernet, Fiber Optic, Coaxial Cable, Powerline Networking, and DSL
+		Wireless technologies - Wi-Fi, Cellular, Satellite, Bluetooth, NFC, Infrared, Zigbee, Z-Wave, LoRa/LoRaWAN, and Li-Fi.  
+## Transmission Media / Ethernet Cables
+		· Copper Ethernet cables
+		· Fiber-optic cables 
+		· Wireless transmission
+## Why Learn Networking?
+		· Simply because Everything is Online, we expect our devices, cell phones, tablets, laptops and desktop computers to always be connected to the global internet. It allows devices to communicate, share resources and data, access services remotely, and connect to the Internet. The internet has become such a part of everyday life that we almost take it for granted. 
+## Who Owns “The Internet”?
+		· internet  = inter-networking
+		· The internet is not owned by any individual or group.  The internet is a worldwide collection of interconnected networks (internetwork or internet), working with each other to exchange information using common standards. Through telephone wires, fiber-optic cables, wireless transmissions, and satellite links, internet users can exchange information in a variety of forms, as shown in the figure.
+## Computer Network vs IT?
+		· Computer Network - allows digital communication between computers (nodes) to share resources and exchange data.
+		· All of IT (Information Technology) - revolves around transferring information through connected systems.
+## Common Networking Orgs?
+		· IEEE, IANA, IETF, ICANN, ITU, TIA
+  IEEE – networking and technology standards
+  IETF – Internet standards and protocols
+  IANA – Internet number and protocol registries
+  ICANN – coordinates domain names and Internet identifiers
+  ITU – international telecommunications standards and coordination
+  TIA – telecommunications and ICT standards
+## Components of Computer Networking
+		1. Physical Components – cables, switches, routers, network cards, access points, etc. 
+		2. Network Configuration – IP address, subnet mask, gateway, DNS, DHCP, and other network settings. 
+		3. Network Types – LAN, WAN, MAN, PAN. 
+		4. Network Protocols – TCP/IP, HTTP/HTTPS, DNS, DHCP, FTP, etc. 
+Transmission Methods – Ethernet, Wi-Fi, fiber optic, Bluetooth, cellular, etc.
